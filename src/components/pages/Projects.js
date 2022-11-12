@@ -6,6 +6,11 @@ function Projects() {
   return (
     <main className="page-content">
       <ProjectCard titleImage="./images/MistyMind_title_TP.png" />
+      <ProjectCard titleImage="./images/MistyMind_title_TP.png" />
+      <ProjectCard titleImage="./images/MistyMind_title_TP.png" />
+      <ProjectCard titleImage="./images/MistyMind_title_TP.png" />
+      <ProjectCard titleImage="./images/MistyMind_title_TP.png" />
+      <ProjectCard titleImage="./images/MistyMind_title_TP.png" />
     </main>
   );
 }
