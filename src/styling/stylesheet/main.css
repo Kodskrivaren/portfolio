@@ -1,0 +1,86 @@
+.header {
+  color: #75e6da;
+  background-image: linear-gradient(to bottom, transparent 93%, #189ab4, transparent);
+  height: 8em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header-nav .nav-list .list-item {
+  list-style-type: none;
+}
+.header .header-nav .nav-list .list-item .item-button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  color: #75e6da;
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+}
+
+.page-footer {
+  position: static;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 5em;
+  margin: auto auto 0 auto;
+}
+.page-footer .footer-list {
+  background-image: linear-gradient(to top, #189ab4, transparent);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-footer .footer-list .list-item {
+  width: 30%;
+  list-style-type: none;
+  text-align: center;
+}
+.page-footer .footer-list .list-item .item-link {
+  color: #d4f1f4;
+}
+
+.page-content {
+  color: white;
+}
+.page-content .content-card {
+  display: block;
+  margin: 0 auto;
+  background-color: #189ab4;
+  width: 90%;
+  border-radius: 1em;
+  padding: 1em 0;
+  border: 3px solid #75e6da;
+}
+.page-content .content-card .card-image {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #75e6da;
+  border-radius: 10%;
+  border: 5px solid #05445e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: customFont;
+  src: url("../../../public/fonts/Inter/Inter.ttf");
+}
+body {
+  background-color: #05445e;
+  font-family: customFont;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */

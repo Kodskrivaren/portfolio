@@ -1,0 +1,25 @@
+.header{
+    color: $CBlueGreen;
+    background-image: linear-gradient(to bottom, transparent 93%, $CBlueGrotto , transparent);
+    height: 8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .header-nav{
+        .nav-list{
+            .list-item{
+                list-style-type: none;
+                .item-button{
+                    background: none;
+                    border: none;
+                    font-family: inherit;
+                    cursor:pointer;
+                    color: $CBlueGreen;
+                    font-size: 1rem;
+                    margin-bottom: 0.3em;
+                }
+            }
+        }
+    }
+}

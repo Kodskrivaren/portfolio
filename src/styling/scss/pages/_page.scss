@@ -1,0 +1,22 @@
+.page-content{
+    color: white;
+
+    //Project page
+    .content-card{
+        display: block;
+        margin: 0 auto;
+        background-color: $CBlueGrotto;
+        width: 90%;
+        border-radius: 1em;
+        padding: 1em 0;
+        border: 3px solid $CBlueGreen;
+        .card-image{
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            background-color: $CBlueGreen;
+            border-radius: 10%;
+            border: 5px solid $CNavyBlue;
+        }
+    }
+}
