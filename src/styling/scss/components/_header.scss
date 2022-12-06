@@ -7,9 +7,13 @@
     align-items: center;
 
     .header-nav{
+        display: flex;
         .nav-list{
+            display: flex;
+            height: 100%;
             .list-item{
                 list-style-type: none;
+                margin: 0 0.5em;
                 .item-button{
                     background: none;
                     border: none;
@@ -21,5 +25,80 @@
                 }
             }
         }
+        .burger-list,
+        .nav-burger{
+            visibility: hidden;
+            display: none;
+            width: 0;
+            height: 0;
+        }
     }
+}
+
+@media screen and (max-width:768px) {
+    .header{
+        .header-nav{
+        .nav-list{
+            display: none;
+            visibility: hidden;
+            width: 0;
+            *{
+                width: 0;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .nav-burger{
+            cursor: pointer;
+            position: relative;
+            visibility: visible;
+            display: block;
+            align-self: center;
+            width: 48px;
+            height: 48px;
+            background-color: transparent;
+            border: none;
+            .hide{
+                display: none;
+                visibility: hidden;
+            }
+            .burger-image{
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .burger-list{
+            position: absolute;
+            box-shadow: 0 0 20px black;
+            top: 86px;
+            left: 65%;
+            visibility: visible;
+            display: inline;
+            list-style-type: none;
+            background-color: $CNavyBlue;
+            width: fit-content;
+            height: fit-content;
+            padding: 0.5em 1em;
+            z-index: 5;
+            border-radius: 0.5em;
+            .list-item{
+                margin: 0.8em 0;
+                .item-button{
+                    width: 110%;
+                    text-align: center;
+                    background: none;
+                    border: none;
+                    font-family: inherit;
+                    cursor:pointer;
+                    color: $CBlueGreen;
+                    font-size: 1rem;
+                    margin-bottom: 0.3em;
+                }
+            }
+        }
+    }
+}
 }

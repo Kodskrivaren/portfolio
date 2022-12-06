@@ -1,12 +1,10 @@
 .page-footer{
     position: sticky;
-    display: block;
-    width: fit-content;
+    width: 100%;
     height: 5em;
-    bottom: 0;
+    bottom: -5em;
     .footer-list{
         background-image: linear-gradient(to top, $CBlueGrotto 75%, transparent);
-        width: 100vw;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -19,5 +17,11 @@
                 color: $CBabyBlue;
             }
         }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .page-footer{
+        bottom: 0;
     }
 }

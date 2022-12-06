@@ -1,6 +1,6 @@
 import "./../styling/stylesheet/main.css";
 import React, { useState } from "react";
-import Header from "./Header";
+import Header from "./Header/Header";
 import Footer from "./Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";

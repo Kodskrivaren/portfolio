@@ -15,10 +15,9 @@
 
 body{
     background-color: $CNavyBlue;
+    background-image: url("../../../public/images/Portfolio_BG.webp");
+    background-position: 0 9em;
+    background-repeat: no-repeat;
     font-family: customFont;
-}
-
-.App{
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
 }
