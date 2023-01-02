@@ -160,6 +160,7 @@
 }
 .page-content .content-card .card-image {
   width: 31%;
+  min-width: 150px;
 }
 .page-content .content-card .card-p {
   width: 100%;
