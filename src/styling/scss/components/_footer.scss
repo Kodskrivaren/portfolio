@@ -1,8 +1,8 @@
 .page-footer{
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: 5em;
-    bottom: -5em;
+    bottom: 0;
     .footer-list{
         background-image: linear-gradient(to top, $CBlueGrotto 75%, transparent);
         height: 100%;

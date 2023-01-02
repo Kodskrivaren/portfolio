@@ -16,7 +16,7 @@ function Home() {
         erfarenhet av spelprogrammering i Unity med C#."
       />
       <article className="content-card">
-        <h2 className="card-title">Utvecklare med spetskompetens</h2>
+        <h2 className="card-title">Professionel Google sökare!</h2>
         <p className="card-p">lorem ipsum.</p>
       </article>
       <article className="content-card">

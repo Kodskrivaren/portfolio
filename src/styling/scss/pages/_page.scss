@@ -26,17 +26,23 @@
             flex: 0 0 30%;
         }
         .card-image{
-            width: 30%;
-            border: solid 3px $CBlueGreen;
-            border-radius: 50%;
+            width: 31%;
+            // border: solid 3px $CBlueGreen;
+            // border-radius: 50%;
         }
         .card-p{
             width: 100%;
         }
     }
 
+    .content-project:nth-child(even),
     .content-card:nth-child(even){
-        margin: 2em -2em 2em auto;
+        margin: 2em -1em 2em auto;
+    }
+
+    .content-project:nth-child(odd),
+    .content-card:nth-child(odd){
+        margin: 2em auto 2em -1em;
     }
 
     // Project page
@@ -46,6 +52,7 @@
         background-color: $CNavyBlueTP;
         margin: 2em auto;
         width: 90%;
+        max-width: 800px;
         border-radius: 1em;
         padding: 1em 0;
         border: 3px solid $CBlueGreen;
@@ -54,14 +61,20 @@
             display: block;
             width: 75%;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 2em auto;
+            border-radius: 0.75em;
         }
 
         .project-p{
+            font-size: 1.2rem;
             color: $CBlueGreen;
             display: block;
             margin: 0 auto;
             width: 90%;
         }
     }
+}
+
+@media screen and (min-width:768px) {
+    
 }
