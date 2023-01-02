@@ -3,7 +3,6 @@
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 100vh;
     // Home page
     .content-card{
         background-color: $CNavyBlueTP;
@@ -27,22 +26,50 @@
         }
         .card-image{
             width: 31%;
-            // border: solid 3px $CBlueGreen;
-            // border-radius: 50%;
         }
         .card-p{
             width: 100%;
+            font-size: 1.2rem;
+        }
+        .p-list{
+            font-size: 1.2rem;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5em;
+            li{
+                margin-top: 1em;
+                margin-bottom: 0;
+                flex: 5em;
+                p{
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 
     .content-project:nth-child(even),
     .content-card:nth-child(even){
         margin: 2em -1em 2em auto;
+        opacity: 0;
+        animation-name: fade-in-right;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 0.2s;
     }
 
     .content-project:nth-child(odd),
     .content-card:nth-child(odd){
         margin: 2em auto 2em -1em;
+        opacity: 0;
+        animation-name: fade-in-left;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 0.1s;
     }
 
     // Project page
@@ -73,8 +100,32 @@
             width: 90%;
         }
     }
+
+    .content-card:last-child,
+    .content-project:last-child{
+        margin-bottom: 10em;
+    }
+
+    @keyframes fade-in-left {
+        0%{opacity: 0; transform: translateX(-50px);}
+        100%{opacity: 1; transform: translateX(0);}
+    }
+
+    @keyframes fade-in-right {
+        0%{opacity: 0; transform: translateX(50px);}
+        100%{opacity: 1; transform: translateX(0);}
+    }
 }
 
 @media screen and (min-width:768px) {
-    
+    .page-content{
+        .content-project,
+        .content-card{
+            .project-p,
+            .p-list,
+            .card-p{
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

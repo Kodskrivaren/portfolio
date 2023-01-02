@@ -23,13 +23,13 @@ function Projects() {
         pClass="project-p"
         pText={[
           "Shack är ett av de första spelen jag programmerade när jag lärde mig javascript.",
-          <br />,
-          <br />,
+          <br key={0} />,
+          <br key={1} />,
           "Man kan spela mot en AI, mot en vän lokalt på datorn eller över nätet.",
-          <br />,
-          <br />,
+          <br key={2} />,
+          <br key={3} />,
           "Länk till spelet: ",
-          <a href="https://kettler-gamer.github.io/chess/">
+          <a href="https://kettler-gamer.github.io/chess/" key={4}>
             https://kettler-gamer.github.io/chess/
           </a>,
         ]}

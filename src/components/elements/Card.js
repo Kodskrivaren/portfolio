@@ -13,7 +13,10 @@ function Card(props) {
           alt={props.imageAlt}
         />
       )}
-      <p className={props.pClass}>{props.pText}</p>
+      {props.pText !== undefined && (
+        <p className={props.pClass}>{props.pText}</p>
+      )}
+      {props.list !== undefined && props.list}
     </div>
   );
 }
