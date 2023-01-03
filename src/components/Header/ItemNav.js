@@ -8,7 +8,11 @@ function ItemNav(props) {
 
   return (
     <li className="list-item">
-      <button className="item-button" onClick={setPage} name={props.page}>
+      <button
+        className="item-button"
+        onClick={setPage}
+        name={props.page}
+        style={props.currentPage === props.page ? { color: "#189ab4" } : {}}>
         {props.displayName}
       </button>
     </li>

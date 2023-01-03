@@ -12,11 +12,16 @@ function HeaderNav(props) {
 
   return (
     <nav className="header-nav">
-      <NavList className={"nav-list"} setPage={props.setPage} />
+      <NavList
+        className={"nav-list"}
+        setPage={props.setPage}
+        currentPage={props.currentPage}
+      />
       {toggle && (
         <NavList
           className={"burger-list"}
           setPage={props.setPage}
+          currentPage={props.currentPage}
           setToggle={setToggle}
         />
       )}

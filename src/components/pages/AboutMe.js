@@ -8,7 +8,7 @@ function AboutMe() {
         cardClassName="content-card"
         cardTitleClassName="card-title"
         cardTitleText="Filip Blomqvist"
-        titleImage={process.env.PUBLIC_URL + "/images/ProfilePic.webp"}
+        titleImage={"/images/ProfilePic.webp"}
         imageClass="card-image"
         imageAlt="profile"
         pClass="card-p"

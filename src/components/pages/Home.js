@@ -1,20 +1,35 @@
 import React from "react";
 import Card from "../elements/Card";
 import List from "../elements/List";
+import ProjectsInfo from "../../db/ProjectsInfo";
 
-function Home() {
+function Home(props) {
   const skills = [
-    "C#",
-    "JavaScript",
-    "CSS",
-    "HTML",
-    "React",
-    "Unity",
-    "Blender",
-    "Kanban",
+    <p key={20}>C#</p>,
+    <p key={21}>JavaScript</p>,
+    <p key={22}>CSS</p>,
+    <p key={23}>HTML</p>,
+    <p key={24}>React</p>,
+    <p key={25}>Unity</p>,
+    <p key={26}>Blender</p>,
   ];
 
-  const projects = ["Schack", "Misty Mind (Skräckspel)"];
+  const projects = [
+    <button
+      onClick={() => {
+        props.setProjectPage(ProjectsInfo[0]);
+      }}
+      key={11}>
+      Misty Mind
+    </button>,
+    <button
+      onClick={() => {
+        props.setProjectPage(ProjectsInfo[1]);
+      }}
+      key={10}>
+      Schack
+    </button>,
+  ];
 
   return (
     <main className="page-content">
@@ -22,7 +37,7 @@ function Home() {
         cardClassName="content-card"
         cardTitleClassName="card-title"
         cardTitleText="Filip Blomqvist"
-        titleImage={process.env.PUBLIC_URL + "/images/ProfilePic.webp"}
+        titleImage={"/images/ProfilePic.webp"}
         imageClass="card-image"
         imageAlt="profile"
         pClass="card-p"

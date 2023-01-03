@@ -9,7 +9,7 @@ function Card(props) {
       {props.titleImage !== undefined && (
         <img
           className={props.imageClass}
-          src={props.titleImage}
+          src={process.env.PUBLIC_URL + props.titleImage}
           alt={props.imageAlt}
         />
       )}
@@ -17,6 +17,7 @@ function Card(props) {
         <p className={props.pClass}>{props.pText}</p>
       )}
       {props.list !== undefined && props.list}
+      {props.readMore !== undefined && props.readMore}
     </div>
   );
 }

@@ -9,18 +9,21 @@ function NavList(props) {
         page={"home"}
         displayName={"<Hem />"}
         setToggle={props.setToggle}
+        currentPage={props.currentPage}
       />
       <ItemNav
         setPage={props.setPage}
         page={"projects"}
         displayName={"<Projekt />"}
         setToggle={props.setToggle}
+        currentPage={props.currentPage}
       />
       <ItemNav
         setPage={props.setPage}
         page={"aboutMe"}
         displayName={"<Om mig />"}
         setToggle={props.setToggle}
+        currentPage={props.currentPage}
       />
     </ul>
   );
