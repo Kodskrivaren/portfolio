@@ -6,6 +6,13 @@
     justify-content: space-around;
     align-items: center;
 
+    .header-title{
+        .title-subtext{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+
     .header-nav{
         display: flex;
         .nav-list{

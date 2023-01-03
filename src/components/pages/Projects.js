@@ -4,10 +4,6 @@ import Card from "../elements/Card";
 import ProjectsInfo from "../../db/ProjectsInfo";
 
 function Projects(props) {
-  function setProjectPage(info) {
-    props.setProjectPage(info);
-  }
-
   return (
     <main className="page-content">
       <Card
@@ -23,7 +19,7 @@ function Projects(props) {
           <button
             className="read-more-btn"
             onClick={() => {
-              setProjectPage(ProjectsInfo[0]);
+              props.setProjectPage(ProjectsInfo[0]);
             }}>
             Läs mer
           </button>
@@ -48,7 +44,7 @@ function Projects(props) {
           <button
             className="read-more-btn"
             onClick={() => {
-              setProjectPage(ProjectsInfo[1]);
+              props.setProjectPage(ProjectsInfo[1]);
             }}>
             Läs mer
           </button>

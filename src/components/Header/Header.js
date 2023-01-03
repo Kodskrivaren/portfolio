@@ -5,7 +5,10 @@ import HeaderNav from "./HeaderNav";
 function Header(props) {
   return (
     <header className="header">
-      <h1 className="header-title">{"<Portfolio />"}</h1>
+      <h1 className="header-title">
+        {"<Portfolio />"}
+        <p className="title-subtext">Byggd med React!</p>
+      </h1>
       <HeaderNav setPage={props.setPage} currentPage={props.currentPage} />
     </header>
   );

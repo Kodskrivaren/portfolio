@@ -3,18 +3,26 @@ const infos = [
     title: "Misty Mind",
     img: "/images/projects/mistyMind/MistyMind_title_TP.png",
     desc: [
-      "Misty Mind började jag jobba på i April 2020 då jag började jobba på en prototyp till spelet. Senare i augusti spenderade jag min semester på att få till ett demo som mina vänner och kollegor kunde testa.",
+      "Misty Mind är ett skräckspel i första persons synvinkel där man utforskar en herrgård där ett farligt monster vandrar runt. ",
+      "Jag började jobba på spelet April 2020 då jag utvecklade en prototyp." +
+        " Senare i augusti spenderade jag mina 3 veckors semester på att få till ett demo.",
+      <br key="break1" />,
+      <br key="break2" />,
+      "Jag gjorde nästan allting från grunden. 3D miljöer, programmering, ljudeffekter, musik, UI osv. " +
+        "Jag tog en kurs i 3D modellering med Blender så jag kunde göra ett unikt monster till spelet. " +
+        "Misty Mind är mitt mest ambitiösa projekt.",
       <img
-        key={0}
+        key="Misty1"
         className="project-image"
         src={
           process.env.PUBLIC_URL + "/images/projects/mistyMind/Level_2_b_3.webp"
         }
         alt="hallway"
       />,
-      "Jag fick ganska bra respons och bestämde mig för att fortsätta jobba på spelet. ",
+      "Under spelets gång får man lösa pussel och försöka undvika monstret som patrullerar runt korridorerna. " +
+        "Spelaren har inga vapen att försvara sig med utan man måste hålla sig gömd eller springa ifrån monstret om man blir upptäckt.",
       <img
-        key={1}
+        key="Misty2"
         className="project-image"
         src={
           process.env.PUBLIC_URL + "/images/projects/mistyMind/Level_1_c.webp"

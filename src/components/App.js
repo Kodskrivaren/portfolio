@@ -12,6 +12,8 @@ function App() {
   const [project, setProject] = useState({});
 
   function setProjectPage(info) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     setProject(info);
     setPage("project");
   }
