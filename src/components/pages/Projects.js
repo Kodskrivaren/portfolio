@@ -8,9 +8,36 @@ function Projects(props) {
     <main className="page-content">
       <Card
         cardClassName="content-project"
-        titleImage={"/images/projects/mistyMind/MistyMind_title_TP.png"}
-        imageClass="project-image"
-        imageAlt="title"
+        slideShowClass="project-slideshow"
+        slideShow={[
+          <img
+            key="mmSlide1"
+            className="slide"
+            src={
+              process.env.PUBLIC_URL +
+              "/images/projects/mistyMind/MistyMind_title_TP.png"
+            }
+            alt="title"
+          />,
+          <img
+            key="mmSlide2"
+            className="slide"
+            src={
+              process.env.PUBLIC_URL +
+              "/images/projects/mistyMind/Level_1_c.webp"
+            }
+            alt="basement"
+          />,
+          <img
+            key="mmSlide3"
+            className="slide"
+            src={
+              process.env.PUBLIC_URL +
+              "/images/projects/mistyMind/Level_2_b_3.webp"
+            }
+            alt="basement"
+          />,
+        ]}
         pClass="project-p"
         pText={[
           "Misty Mind är ett skräckspel som jag utvecklar i spelmotorn Unity. Jag har jobbat på detta spel titt som tätt sedan April 2020.",
@@ -27,9 +54,27 @@ function Projects(props) {
       />
       <Card
         cardClassName="content-project"
-        titleImage={"/images/projects/chess/Chess.webp"}
-        imageClass="project-image"
-        imageAlt="chess board"
+        slideShowClass="project-slideshow"
+        slideShow={[
+          <img
+            key="chessSlide1"
+            className="slide"
+            src={process.env.PUBLIC_URL + "/images/projects/chess/Chess.webp"}
+            alt="title"
+          />,
+          <img
+            key="chessSlide2"
+            className="slide"
+            src={process.env.PUBLIC_URL + "/images/projects/chess/chess2.jpg"}
+            alt="basement"
+          />,
+          <img
+            key="chessSlide3"
+            className="slide"
+            src={process.env.PUBLIC_URL + "/images/projects/chess/chess3.jpg"}
+            alt="basement"
+          />,
+        ]}
         pClass="project-p"
         pText={[
           "Shack är ett av de första spelen jag programmerade när jag lärde mig javascript.",

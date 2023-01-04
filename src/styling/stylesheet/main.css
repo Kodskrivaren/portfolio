@@ -241,7 +241,7 @@
   background-color: rgba(30, 30, 30, 0.9137254902);
   margin: 2em auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 500px;
   border-radius: 1em;
   padding: 1em 0;
   border: 3px solid #75e6da;
@@ -280,6 +280,25 @@
 .page-content .content-project .read-more-btn:hover {
   background-color: #189ab4;
   color: #1e1e1e;
+}
+.page-content .content-project .project-slideshow {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+}
+.page-content .content-project .project-slideshow .images {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  scroll-behavior: smooth;
+  transform: translate3d(0, 0, 0);
+}
+.page-content .content-project .project-slideshow .images .slide {
+  width: 100%;
+  flex: 0 0 100%;
+  margin: auto 1%;
+  border-radius: 0.5em;
 }
 .page-content .content-card:last-child,
 .page-content .content-project:last-child {
