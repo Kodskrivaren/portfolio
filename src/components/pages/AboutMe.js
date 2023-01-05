@@ -1,7 +1,10 @@
 import React from "react";
 import Card from "../elements/Card";
+import List from "../elements/List";
 
 function AboutMe() {
+  const miscInfo = [<p key="misc1">Körkort: B</p>];
+
   return (
     <main className="page-content">
       <Card
@@ -18,6 +21,14 @@ function AboutMe() {
           <br key={1} />,
           "",
         ]}
+      />
+      <Card
+        cardClassName="content-card"
+        cardTitleClassName="card-title"
+        cardTitleText="Övrig info"
+        imageAlt="profile"
+        pClass="card-p"
+        list={<List className="p-list" listItems={miscInfo} />}
       />
     </main>
   );

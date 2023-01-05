@@ -42,6 +42,12 @@ const infos = [
         src={process.env.PUBLIC_URL + "/images/projects/chess/chess3.jpg"}
         alt="basement"
       />,
+      <br key="chessBr1" />,
+      <br key="chessBr2" />,
+      "Länk till spelet: ",
+      <a href="https://kettler-gamer.github.io/chess/" key={4}>
+        https://kettler-gamer.github.io/chess/
+      </a>,
     ],
   },
 ];

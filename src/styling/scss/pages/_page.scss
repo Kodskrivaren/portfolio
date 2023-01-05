@@ -3,15 +3,17 @@
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 100%;
     // Home page
     .content-card{
         background-color: $CNavyBlueTP;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 75%;
+        max-width: 500px;
         box-shadow: 0 0 20px black;
         height: fit-content;
         padding: 2em;
@@ -67,6 +69,12 @@
                 }
             }
         }
+        a{
+            color: $CBlueGrotto;
+        }
+        a:hover{
+            color: $CBlueGreen;
+        }
     }
 
     .content-project:nth-child(even),
@@ -92,7 +100,9 @@
     // Project page
     .content-project{
         box-shadow: 0 0 20px black;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: $CNavyBlueTP;
         margin: 2em auto;
         width: 90%;
@@ -157,6 +167,12 @@
                 }
             }
         }
+        a{
+            color: $CBlueGrotto;
+        }
+        a:hover{
+            color: $CBlueGreen;
+        }
     }
 
     .content-card:last-child,
@@ -182,8 +198,31 @@
             .project-p,
             .p-list,
             .card-p{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+
+        .content-project:nth-child(even),
+        .content-card:nth-child(even),
+        .content-project:nth-child(odd),
+        .content-card:nth-child(odd){
+            margin: 1em;
+        }
+
+        // .content-project:last-child,
+        // .content-card:last-child{
+        //     justify-self: center;
+        //     margin-bottom: 8em;
+        // }
     }
 }
