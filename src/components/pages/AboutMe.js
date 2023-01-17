@@ -3,7 +3,10 @@ import Card from "../elements/Card";
 import List from "../elements/List";
 
 function AboutMe() {
-  const miscInfo = [<p key="misc1">Körkort: B</p>];
+  const miscInfo = [
+    <p key="misc1">Körkort: B</p>,
+    <p key="misc2">Kommun: Katrineholm</p>,
+  ];
 
   return (
     <main className="page-content">
