@@ -47,7 +47,7 @@ function Home(props) {
           `Hej! Jag utbildar mig till front-end utvecklare! Har kunskaper inom HTML, CSS och javascript men även inom ramverket React. Har tidigare programmerat myvket i C# på fritiden och har erfarenheter av Unity.`,
           <br key={"main-key-1"} />,
           <br key={"main-key-2"} />,
-          "I november är jag i behov av en LIA-plats, från 27 november till 12 april.",
+          "Jag är i behov av en LIA-plats, från 27-11-2023 till 12-04-2024.",
         ]}
       />
       <Card
