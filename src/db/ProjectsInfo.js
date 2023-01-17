@@ -44,6 +44,9 @@ const infos = [
       />,
       <br key="chessBr1" />,
       <br key="chessBr2" />,
+      "Online servern skrev jag i JavaScript och körde lokalt i Node.js. När jag var nöjd med skriptet så skapade jag en server via Microsoft Azure som kör skriptet. Detta gjorde online delen fullt fungerande!",
+      <br key="chessBr3" />,
+      <br key="chessBr4" />,
       "Länk till spelet: ",
       <a href="https://kettler-gamer.github.io/chess/" key={4}>
         https://kettler-gamer.github.io/chess/

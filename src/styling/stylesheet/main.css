@@ -110,6 +110,7 @@
   }
 }
 .page-footer {
+  background-image: linear-gradient(to top, transparent 93%, #189ab4, transparent);
   align-self: flex-end;
   width: 100%;
   height: 5em;
@@ -117,8 +118,10 @@
   font-size: 1.15rem;
 }
 .page-footer .footer-list {
-  background-image: linear-gradient(to top, transparent 93%, #189ab4, transparent);
+  margin: 0 auto;
   height: 100%;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;

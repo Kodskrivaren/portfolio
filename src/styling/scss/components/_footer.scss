@@ -1,15 +1,15 @@
 .page-footer{
-    // position: fixed;
+    background-image: linear-gradient(to top, transparent 93%, $CBlueGrotto , transparent);
     align-self: flex-end;
     width: 100%;
     height: 5em;
     bottom: 0;
     font-size: 1.15rem;
     .footer-list{
-        // background-image: linear-gradient(to top, $CNavyBlue 75%, transparent);
-        // border-top: 2px solid $CBlueGrotto;
-        background-image: linear-gradient(to top, transparent 93%, $CBlueGrotto , transparent);
+        margin: 0 auto;
         height: 100%;
+        width: 100%;
+        max-width: 900px;
         display: flex;
         justify-content: center;
         align-items: center;

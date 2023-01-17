@@ -11,9 +11,9 @@ function Home(props) {
     <p key={23}>HTML</p>,
     <p key={24}>React</p>,
     <p key={25}>Unity</p>,
-    <p key={26}>Blender</p>,
     <p key={27}>Node</p>,
     <p key={28}>Git/Github</p>,
+    <p key={26}>Blender</p>,
   ];
 
   const projects = [
@@ -44,10 +44,10 @@ function Home(props) {
         imageAlt="profile"
         pClass="card-p"
         pText={[
-          `Hej! Jag utbildar mig till front-end utvecklare! Har kunskaper inom HTML, CSS och javascript men även inom ramverket React. Har tidigare programmerat myvket i C# på fritiden och har erfarenheter av Unity.`,
+          `Hej! Jag utbildar mig till front-end utvecklare och förväntas vara klar våren 2024! Har kunskaper inom HTML, CSS och javascript men även inom ramverket React. Har tidigare programmerat mycket i C# på fritiden och har erfarenheter av Unity.`,
           <br key={"main-key-1"} />,
           <br key={"main-key-2"} />,
-          "Jag är i behov av en LIA-plats, från 27-11-2023 till 12-04-2024.",
+          "Jag är i behov av en LIA-plats för min utbildning, från 27-11-2023 till 12-04-2024.",
         ]}
       />
       <Card

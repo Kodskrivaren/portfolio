@@ -9,6 +9,13 @@ function Footer() {
             Github
           </a>
         </li>
+        <li className="list-item">
+          <a
+            className="item-link"
+            href="https://www.linkedin.com/in/filip-b-5bb740262/">
+            LinkedIn
+          </a>
+        </li>
       </ul>
     </footer>
   );
