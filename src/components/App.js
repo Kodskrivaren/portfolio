@@ -23,7 +23,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/">
+          <Route path="/portfolio/">
             <Route index element={<Home setProjectPage={setProjectPage} />} />
             <Route
               path="projects"

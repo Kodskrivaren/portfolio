@@ -45,7 +45,7 @@ function Projects(props) {
         ]}
         readMore={
           <Link
-            to={"project"}
+            to="../projects/project"
             className="read-more-btn"
             onClick={() => {
               props.setProjectPage(ProjectsInfo[0]);
@@ -89,7 +89,7 @@ function Projects(props) {
         ]}
         readMore={
           <Link
-            to="project"
+            to="../projects/project"
             className="read-more-btn"
             onClick={() => {
               props.setProjectPage(ProjectsInfo[1]);

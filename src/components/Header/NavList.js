@@ -4,14 +4,18 @@ import ItemNav from "./ItemNav";
 function NavList(props) {
   return (
     <ul className={props.className}>
-      <ItemNav page={"/"} displayName={"<Hem />"} setToggle={props.setToggle} />
       <ItemNav
-        page={"projects"}
+        page={"/portfolio/"}
+        displayName={"<Hem />"}
+        setToggle={props.setToggle}
+      />
+      <ItemNav
+        page={"/portfolio/projects"}
         displayName={"<Projekt />"}
         setToggle={props.setToggle}
       />
       <ItemNav
-        page={"aboutMe"}
+        page={"/portfolio/aboutMe"}
         displayName={"<Om mig />"}
         setToggle={props.setToggle}
       />

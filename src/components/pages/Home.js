@@ -19,7 +19,7 @@ function Home(props) {
 
   const projects = [
     <Link
-      to="../projects/project"
+      to="../portfolio/projects/project"
       onClick={() => {
         props.setProjectPage(ProjectsInfo[0]);
       }}
@@ -27,7 +27,7 @@ function Home(props) {
       Misty Mind
     </Link>,
     <Link
-      to="../projects/project"
+      to="../portfolio/projects/project"
       onClick={() => {
         props.setProjectPage(ProjectsInfo[1]);
       }}
