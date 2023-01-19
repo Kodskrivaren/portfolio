@@ -10,20 +10,18 @@ import AboutMe from "./pages/AboutMe";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  const [page, setPage] = useState("home");
   const [project, setProject] = useState({});
 
   function setProjectPage(info) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     setProject(info);
-    setPage("project");
   }
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Header setPage={setPage} currentPage={page} />
+        <Header />
         <Routes>
           <Route path="/">
             <Route index element={<Home setProjectPage={setProjectPage} />} />

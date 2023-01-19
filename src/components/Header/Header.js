@@ -9,7 +9,7 @@ function Header(props) {
         {"<Portfolio />"}
         <p className="title-subtext">Byggd med React!</p>
       </h1>
-      <HeaderNav setPage={props.setPage} currentPage={props.currentPage} />
+      <HeaderNav />
     </header>
   );
 }
