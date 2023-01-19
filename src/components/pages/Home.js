@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../elements/Card";
 import List from "../elements/List";
 import ProjectsInfo from "../../db/ProjectsInfo";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   const skills = [
@@ -17,20 +18,22 @@ function Home(props) {
   ];
 
   const projects = [
-    <button
+    <Link
+      to="../projects/project"
       onClick={() => {
         props.setProjectPage(ProjectsInfo[0]);
       }}
       key={11}>
       Misty Mind
-    </button>,
-    <button
+    </Link>,
+    <Link
+      to="../projects/project"
       onClick={() => {
         props.setProjectPage(ProjectsInfo[1]);
       }}
       key={10}>
       Schack
-    </button>,
+    </Link>,
   ];
 
   return (

@@ -6,7 +6,7 @@ function NavList(props) {
     <ul className={props.className}>
       <ItemNav
         setPage={props.setPage}
-        page={"home"}
+        page={""}
         displayName={"<Hem />"}
         setToggle={props.setToggle}
         currentPage={props.currentPage}

@@ -43,6 +43,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header .header-nav {
+    position: relative;
+  }
   .header .header-nav .nav-list {
     display: none;
     visibility: hidden;
@@ -78,15 +81,13 @@
   .header .header-nav .burger-list {
     position: absolute;
     box-shadow: 0 0 20px black;
-    top: 86px;
-    left: 65%;
+    top: 5px;
+    left: -9em;
     visibility: visible;
     display: inline;
     list-style-type: none;
     background-color: #1e1e1e;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 7em;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -96,6 +97,8 @@
   }
   .header .header-nav .burger-list .list-item {
     margin: 0.8em 0;
+    display: flex;
+    justify-content: center;
   }
   .header .header-nav .burger-list .list-item .item-button {
     width: 110%;
@@ -283,6 +286,7 @@
   width: 90%;
 }
 .page-content .content-project .read-more-btn {
+  text-align: center;
   transition: 0.2s background-color;
   font-family: customFont;
   background-color: #1e1e1e;
@@ -327,6 +331,19 @@
 .page-content .content-card:last-child,
 .page-content .content-project:last-child {
   margin-bottom: 10em;
+}
+.page-content .no-page {
+  background-color: #1e1e1e;
+  padding: 2em 3em;
+  border-radius: 1em;
+  border: 3px solid #75e6da;
+  text-align: center;
+}
+.page-content .no-page .no-page-title {
+  font-size: 3rem;
+}
+.page-content .no-page .no-page-content {
+  font-size: 1.5rem;
 }
 @-webkit-keyframes fade-in-left {
   0% {
@@ -397,6 +414,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+*:focus {
+  outline: none;
 }
 
 html, body {

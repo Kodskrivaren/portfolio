@@ -2,6 +2,7 @@ import React from "react";
 import "../../styling/stylesheet/main.css";
 import Card from "../elements/Card";
 import ProjectsInfo from "../../db/ProjectsInfo";
+import { Link } from "react-router-dom";
 
 function Projects(props) {
   return (
@@ -43,13 +44,14 @@ function Projects(props) {
           "Misty Mind är ett skräckspel som jag utvecklar i spelmotorn Unity. Jag har jobbat på detta spel titt som tätt sedan April 2020.",
         ]}
         readMore={
-          <button
+          <Link
+            to={"project"}
             className="read-more-btn"
             onClick={() => {
               props.setProjectPage(ProjectsInfo[0]);
             }}>
             Läs mer
-          </button>
+          </Link>
         }
       />
       <Card
@@ -86,13 +88,14 @@ function Projects(props) {
           </a>,
         ]}
         readMore={
-          <button
+          <Link
+            to="project"
             className="read-more-btn"
             onClick={() => {
               props.setProjectPage(ProjectsInfo[1]);
             }}>
             Läs mer
-          </button>
+          </Link>
         }
       />
     </main>

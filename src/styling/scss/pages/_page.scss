@@ -134,6 +134,7 @@
         }
 
         .read-more-btn{
+            text-align: center;
             transition: 0.2s background-color;
             font-family: customFont;
             background-color: $CNavyBlue;
@@ -180,6 +181,20 @@
     .content-card:last-child,
     .content-project:last-child{
         margin-bottom: 10em;
+    }
+
+    .no-page{
+        background-color: $CNavyBlue;
+        padding: 2em 3em;
+        border-radius: 1em;
+        border: 3px solid $CBlueGreen;
+        text-align: center;
+        .no-page-title{
+            font-size: 3rem;
+        }
+        .no-page-content{
+            font-size: 1.5rem;
+        }
     }
 
     @keyframes fade-in-left {

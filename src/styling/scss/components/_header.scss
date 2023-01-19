@@ -49,6 +49,7 @@
 @media screen and (max-width:768px) {
     .header{
         .header-nav{
+            position: relative;
             .nav-list{
                 display: none;
                 visibility: hidden;
@@ -81,22 +82,25 @@
                     height: 100%;
                 }
             }
+
             .burger-list{
                 position: absolute;
                 box-shadow: 0 0 20px black;
-                top: 86px;
-                left: 65%;
+                top: 5px;
+                left: -9em;
                 visibility: visible;
                 display: inline;
                 list-style-type: none;
                 background-color: $CNavyBlue;
-                width: fit-content;
+                width: 7em;
                 height: fit-content;
                 padding: 0.5em 1em;
                 z-index: 5;
                 border-radius: 0.5em;
                 .list-item{
                     margin: 0.8em 0;
+                    display: flex;
+                    justify-content: center;
                     .item-button{
                         width: 110%;
                         text-align: center;

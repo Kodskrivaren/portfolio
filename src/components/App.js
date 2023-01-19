@@ -1,11 +1,13 @@
 import "./../styling/stylesheet/main.css";
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import AboutMe from "./pages/AboutMe";
+import NoPage from "./pages/NoPage";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -20,11 +22,24 @@ function App() {
 
   return (
     <div className="App">
-      <Header setPage={setPage} currentPage={page} />
-      {page === "home" && <Home setProjectPage={setProjectPage} />}
-      {page === "projects" && <Projects setProjectPage={setProjectPage} />}
-      {page === "project" && <Project info={project} />}
-      {page === "aboutMe" && <AboutMe />}
+      <BrowserRouter>
+        <Header setPage={setPage} currentPage={page} />
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home setProjectPage={setProjectPage} />} />
+            <Route
+              path="projects"
+              element={<Projects setProjectPage={setProjectPage} />}
+            />
+            <Route
+              path="projects/project"
+              element={<Project info={project} />}
+            />
+            <Route path="aboutme" element={<AboutMe />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
