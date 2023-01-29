@@ -27,12 +27,12 @@
   border: none;
   font-family: inherit;
   cursor: pointer;
-  color: #75e6da;
+  color: #189ab4;
   font-size: 1.25rem;
   margin-bottom: 0.3em;
 }
 .header .header-nav .nav-list .list-item .item-button:hover {
-  color: #189ab4;
+  color: #75e6da;
 }
 .header .header-nav .burger-list,
 .header .header-nav .nav-burger {
@@ -420,7 +420,8 @@
   outline: none;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 

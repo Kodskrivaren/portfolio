@@ -3,39 +3,40 @@
 @import "./components/_footer.scss";
 @import "./pages/_page.scss";
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-*:focus{
-    outline: none;
+*:focus {
+  outline: none;
 }
 
-html,body{
-    scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: customFont;
-    src: url("../../../public/fonts/Inter/Inter.ttf");
+  font-family: customFont;
+  src: url("../../../public/fonts/Inter/Inter.ttf");
 }
 
-body{
-    background-color: $CNavyBlue;
-    background-image: url("../../../public/images/Portfolio_BG.webp");
-    background-position: 0 9em;
-    background-repeat: no-repeat;
-    font-family: customFont;
+body {
+  background-color: $CNavyBlue;
+  background-image: url("../../../public/images/Portfolio_BG.webp");
+  background-position: 0 9em;
+  background-repeat: no-repeat;
+  font-family: customFont;
+  min-height: 100vh;
+  #root {
     min-height: 100vh;
-    #root{
-        min-height: 100vh;
-        .App{
-            min-height: 100vh;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    .App {
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
     }
+  }
 }

@@ -16,7 +16,7 @@ function ItemNav(props) {
         name={props.page}
         style={
           useLocation().pathname.endsWith(props.page)
-            ? { color: "#189ab4" }
+            ? { color: "#75e6da" }
             : {}
         }>
         {props.displayName}
