@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../elements/Card";
 import List from "../elements/List";
-import ProjectsInfo from "../../db/ProjectsInfo";
 import { Link } from "react-router-dom";
 
 function Home(props) {
@@ -19,17 +18,17 @@ function Home(props) {
 
   const projects = [
     <Link
-      to="../portfolio/projects/project"
+      to="/portfolio/projects/project/mistymind"
       onClick={() => {
-        props.setProjectPage(ProjectsInfo[0]);
+        props.scrollToTop();
       }}
       key={11}>
       Misty Mind
     </Link>,
     <Link
-      to="../portfolio/projects/project"
+      to="/portfolio/projects/project/chess"
       onClick={() => {
-        props.setProjectPage(ProjectsInfo[1]);
+        props.scrollToTop();
       }}
       key={10}>
       Schack

@@ -1,5 +1,5 @@
 import "./../styling/stylesheet/main.css";
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer";
@@ -10,12 +10,9 @@ import AboutMe from "./pages/AboutMe";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  const [project, setProject] = useState({});
-
-  function setProjectPage(info) {
+  function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    setProject(info);
   }
 
   return (
@@ -24,15 +21,12 @@ function App() {
         <Header />
         <Routes>
           <Route path="/portfolio/">
-            <Route index element={<Home setProjectPage={setProjectPage} />} />
+            <Route index element={<Home scrollToTop={scrollToTop} />} />
             <Route
               path="projects"
-              element={<Projects setProjectPage={setProjectPage} />}
+              element={<Projects scrollToTop={scrollToTop} />}
             />
-            <Route
-              path="projects/project"
-              element={<Project info={project} />}
-            />
+            <Route path="projects/project/*" element={<Project />} />
             <Route path="aboutme" element={<AboutMe />} />
             <Route path="*" element={<NoPage />} />
           </Route>

@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styling/stylesheet/main.css";
 import Card from "../elements/Card";
-import ProjectsInfo from "../../db/ProjectsInfo";
 import { Link } from "react-router-dom";
 
 function Projects(props) {
@@ -45,10 +44,10 @@ function Projects(props) {
         ]}
         readMore={
           <Link
-            to="../projects/project"
+            to="/portfolio/projects/project/mistymind"
             className="read-more-btn"
             onClick={() => {
-              props.setProjectPage(ProjectsInfo[0]);
+              props.scrollToTop();
             }}>
             Läs mer
           </Link>
@@ -89,10 +88,10 @@ function Projects(props) {
         ]}
         readMore={
           <Link
-            to="../projects/project"
+            to="/portfolio/projects/project/chess"
             className="read-more-btn"
             onClick={() => {
-              props.setProjectPage(ProjectsInfo[1]);
+              props.scrollToTop();
             }}>
             Läs mer
           </Link>
