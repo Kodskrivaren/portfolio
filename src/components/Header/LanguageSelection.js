@@ -21,7 +21,7 @@ export default function LanguageSelection(props) {
   }, [props.language]);
 
   return (
-    <select class="language-select" onChange={onLanguageChange}>
+    <select className="language-select" onChange={onLanguageChange}>
       <option id="swedish">Svenska</option>
       <option id="english">English</option>
     </select>

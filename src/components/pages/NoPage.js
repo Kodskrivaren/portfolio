@@ -1,11 +1,12 @@
 import React from "react";
+import Text from "../../Language/NoPageText";
 
 function NoPage(props) {
   return (
     <main className="page-content">
       <div className="no-page">
-        <h2 className="no-page-title">Error 404!</h2>
-        <p className="no-page-content">Page not found!</p>
+        <h2 className="no-page-title">{Text.title[props.language]}</h2>
+        <p className="no-page-content">{Text.desc[props.language]}</p>
       </div>
     </main>
   );
