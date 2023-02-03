@@ -2,6 +2,7 @@ import React from "react";
 import "../../styling/stylesheet/main.css";
 import Card from "../elements/Card";
 import { Link } from "react-router-dom";
+import Text from "../../Language/ProjectsText";
 
 function Projects(props) {
   return (
@@ -39,9 +40,7 @@ function Projects(props) {
           />,
         ]}
         pClass="project-p"
-        pText={[
-          "Misty Mind är ett skräckspel som jag utvecklar i spelmotorn Unity. Jag har jobbat på detta spel titt som tätt sedan April 2020.",
-        ]}
+        pText={Text.mistyMindDesc[props.language]}
         readMore={
           <Link
             to="/portfolio/projects/project/mistymind"
@@ -49,7 +48,7 @@ function Projects(props) {
             onClick={() => {
               props.scrollToTop();
             }}>
-            Läs mer
+            {Text.readMore[props.language]}
           </Link>
         }
       />
@@ -77,15 +76,7 @@ function Projects(props) {
           />,
         ]}
         pClass="project-p"
-        pText={[
-          "Shack är ett av de första spelen jag programmerade när jag lärde mig javascript.",
-          <br key={0} />,
-          <br key={1} />,
-          "Länk till spelet: ",
-          <a href="https://kettler-gamer.github.io/chess/" key={4}>
-            https://kettler-gamer.github.io/chess/
-          </a>,
-        ]}
+        pText={Text.chessDesc[props.language]}
         readMore={
           <Link
             to="/portfolio/projects/project/chess"
@@ -93,7 +84,7 @@ function Projects(props) {
             onClick={() => {
               props.scrollToTop();
             }}>
-            Läs mer
+            {Text.readMore[props.language]}
           </Link>
         }
       />

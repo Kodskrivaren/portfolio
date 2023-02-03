@@ -12,8 +12,14 @@ function HeaderNav(props) {
 
   return (
     <nav className="header-nav">
-      <NavList className={"nav-list"} />
-      {toggle && <NavList className={"burger-list"} setToggle={setToggle} />}
+      <NavList className={"nav-list"} language={props.language} />
+      {toggle && (
+        <NavList
+          className={"burger-list"}
+          language={props.language}
+          setToggle={setToggle}
+        />
+      )}
       <button className="nav-burger" onClick={toggleNavList}>
         <img
           className="burger-image"

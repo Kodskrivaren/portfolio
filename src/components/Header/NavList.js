@@ -1,22 +1,23 @@
 import React from "react";
 import ItemNav from "./ItemNav";
+import Text from "../../Language/HeaderTexts";
 
 function NavList(props) {
   return (
     <ul className={props.className}>
       <ItemNav
         page={"/portfolio/"}
-        displayName={"<Hem />"}
+        displayName={`<${Text.navText.home[props.language]} />`}
         setToggle={props.setToggle}
       />
       <ItemNav
         page={"/portfolio/projects"}
-        displayName={"<Projekt />"}
+        displayName={`<${Text.navText.project[props.language]} />`}
         setToggle={props.setToggle}
       />
       <ItemNav
         page={"/portfolio/aboutMe"}
-        displayName={"<Om mig />"}
+        displayName={`<${Text.navText.aboutme[props.language]} />`}
         setToggle={props.setToggle}
       />
     </ul>

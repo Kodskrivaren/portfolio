@@ -18,6 +18,21 @@
     }
   }
 
+  .language-select{
+    background-color: $CNavyBlue;
+    border: none;
+    color: $CBlueGrotto;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 0.25em;
+    option{
+      color: $CBlueGreen;
+    }
+  }
+  .language-select:hover{
+    color: $CBlueGreen;
+  }
+
   .header-nav {
     display: flex;
     .nav-list {

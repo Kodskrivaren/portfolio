@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../elements/Card";
 import List from "../elements/List";
 import { Link } from "react-router-dom";
+import Text from "../../Language/HomeTexts";
 
 function Home(props) {
   const skills = [
@@ -31,7 +32,7 @@ function Home(props) {
         props.scrollToTop();
       }}
       key={10}>
-      Schack
+      {Text.chess[props.language]}
     </Link>,
   ];
 
@@ -45,24 +46,19 @@ function Home(props) {
         imageClass="card-image"
         imageAlt="profile"
         pClass="card-p"
-        pText={[
-          `Hej! Jag utbildar mig till front-end utvecklare och förväntas vara klar våren 2024! Har kunskaper inom HTML, CSS och javascript men även inom ramverket React. Har tidigare programmerat mycket i C# på fritiden och har erfarenheter av Unity.`,
-          <br key={"main-key-1"} />,
-          <br key={"main-key-2"} />,
-          "Jag är i behov av en LIA-plats för min utbildning, från 27-11-2023 till 12-04-2024.",
-        ]}
+        pText={Text.introduction[props.language]}
       />
       <Card
         cardClassName="content-card"
         cardTitleClassName="card-title"
-        cardTitleText="Färdigheter"
+        cardTitleText={Text.skills[props.language]}
         pClass="card-p"
         list={<List className="p-list" listItems={skills} />}
       />
       <Card
         cardClassName="content-card"
         cardTitleClassName="card-title"
-        cardTitleText="Projekt"
+        cardTitleText={Text.projects[props.language]}
         pClass="card-p"
         list={<List className="p-list" listItems={projects} />}
       />
