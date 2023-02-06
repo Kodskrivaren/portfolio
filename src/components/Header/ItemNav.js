@@ -15,7 +15,8 @@ function ItemNav(props) {
         onClick={setPage}
         name={props.page}
         style={
-          useLocation().pathname.endsWith(props.page)
+          useLocation().pathname.endsWith(props.page) ||
+          window.location.pathname.endsWith(props.page.slice(0, -1))
             ? { color: "#75e6da" }
             : {}
         }>

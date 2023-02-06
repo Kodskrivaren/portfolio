@@ -17,6 +17,7 @@
   font-family: inherit;
   font-size: 1.2rem;
   padding: 0.25em;
+  transition: 0.2s color;
 }
 .header .language-select option {
   color: #75e6da;

@@ -11,12 +11,12 @@ function NavList(props) {
         setToggle={props.setToggle}
       />
       <ItemNav
-        page={"/portfolio/projects"}
+        page={"/portfolio/projects/"}
         displayName={`<${Text.navText.project[props.language]} />`}
         setToggle={props.setToggle}
       />
       <ItemNav
-        page={"/portfolio/aboutMe"}
+        page={"/portfolio/aboutMe/"}
         displayName={`<${Text.navText.aboutme[props.language]} />`}
         setToggle={props.setToggle}
       />
