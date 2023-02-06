@@ -15,7 +15,7 @@ function Card(props) {
   return (
     <div className={props.cardClassName}>
       {props.cardTitleText !== undefined && (
-        <h3 className={props.cardTitleClassName}>{props.cardTitleText}</h3>
+        <h2 className={props.cardTitleClassName}>{props.cardTitleText}</h2>
       )}
       {props.slideShow !== undefined && (
         <div className={props.slideShowClass}>

@@ -223,7 +223,7 @@
 }
 .page-content .content-card .p-list li button {
   transition: 0.2s background-color;
-  font-family: customFont;
+  font-family: customFont, sans-serif;
   background-color: #1e1e1e;
   cursor: pointer;
   color: #75e6da;
@@ -303,7 +303,7 @@
 .page-content .content-project .read-more-btn {
   text-align: center;
   transition: 0.2s background-color;
-  font-family: customFont;
+  font-family: customFont, sans-serif;
   background-color: #1e1e1e;
   cursor: pointer;
   color: #75e6da;
@@ -449,7 +449,7 @@ body {
   background-image: url("../../../public/images/Portfolio_BG.webp");
   background-position: 0 9em;
   background-repeat: no-repeat;
-  font-family: customFont;
+  font-family: customFont, sans-serif;
   min-height: 100vh;
 }
 body #root {

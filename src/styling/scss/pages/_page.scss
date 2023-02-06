@@ -55,7 +55,7 @@
                 }
                 button{
                     transition: 0.2s background-color;
-                    font-family: customFont;
+                    font-family: customFont, sans-serif;
                     background-color: $CNavyBlue;
                     cursor: pointer;
                     color: $CBlueGreen;
@@ -136,7 +136,7 @@
         .read-more-btn{
             text-align: center;
             transition: 0.2s background-color;
-            font-family: customFont;
+            font-family: customFont, sans-serif;
             background-color: $CNavyBlue;
             cursor: pointer;
             color: $CBlueGreen;
