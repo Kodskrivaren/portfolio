@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../elements/Card";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import ProjectsInfo from "../../db/ProjectsInfo";
 import NoPage from "./NoPage";
 
 function Project(props) {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (
+      window.location.pathname.endsWith("/project") ||
+      window.location.pathname.endsWith("/project/")
+    ) {
+      navigate("/portfolio/projects");
+    }
+  });
+
   return (
     <main className="page-content">
       <Routes>
@@ -25,7 +36,7 @@ function Project(props) {
               }></Route>
           );
         })}
-        <Route path="*" element={<NoPage />} />
+        <Route path="*" element={<NoPage language={props.language} />} />
       </Routes>
     </main>
   );
