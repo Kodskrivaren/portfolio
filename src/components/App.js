@@ -10,7 +10,7 @@ import AboutMe from "./pages/AboutMe";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  const [language, setLanguage] = useState("svenska");
+  const [language, setLanguage] = useState("english");
   const mounted = useRef(false);
 
   function scrollToTop() {

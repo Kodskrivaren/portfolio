@@ -5,13 +5,19 @@ function Footer() {
     <footer className="page-footer">
       <ul className="footer-list">
         <li className="list-item">
-          <a className="item-link" href="https://github.com/Kettler-gamer">
+          <a
+            className="item-link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/Kettler-gamer">
             Github
           </a>
         </li>
         <li className="list-item">
           <a
             className="item-link"
+            rel="noreferrer"
+            target="_blank"
             href="https://www.linkedin.com/in/filip-b-5bb740262/">
             LinkedIn
           </a>

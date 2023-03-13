@@ -11,10 +11,10 @@ export default function LanguageSelection(props) {
     const selectElement = document.querySelector(".language-select");
     switch (window.localStorage["language"]) {
       case "svenska":
-        selectElement.childNodes[0].selected = "selected";
+        selectElement.childNodes[1].selected = "selected";
         break;
       case "english":
-        selectElement.childNodes[1].selected = "selected";
+        selectElement.childNodes[0].selected = "selected";
         break;
       default:
     }
@@ -22,8 +22,8 @@ export default function LanguageSelection(props) {
 
   return (
     <select className="language-select" onChange={onLanguageChange}>
-      <option id="swedish">Svenska</option>
       <option id="english">English</option>
+      <option id="swedish">Svenska</option>
     </select>
   );
 }

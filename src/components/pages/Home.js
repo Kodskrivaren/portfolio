@@ -51,16 +51,16 @@ function Home(props) {
       <Card
         cardClassName="content-card"
         cardTitleClassName="card-title"
-        cardTitleText={Text.skills[props.language]}
+        cardTitleText={Text.projects[props.language]}
         pClass="card-p"
-        list={<List className="p-list" listItems={skills} />}
+        list={<List className="p-list" listItems={projects} />}
       />
       <Card
         cardClassName="content-card"
         cardTitleClassName="card-title"
-        cardTitleText={Text.projects[props.language]}
+        cardTitleText={Text.skills[props.language]}
         pClass="card-p"
-        list={<List className="p-list" listItems={projects} />}
+        list={<List className="p-list" listItems={skills} />}
       />
     </main>
   );
