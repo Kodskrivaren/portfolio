@@ -72,8 +72,12 @@ const Text = {
       <br key="chessBr3" />,
       <br key="chessBr4" />,
       "Länk till spelet: ",
-      <a href="https://kettler-gamer.github.io/chess/" key={4}>
-        https://kettler-gamer.github.io/chess/
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://fechess.azurewebsites.net/"
+        key={4}>
+        https://fechess.azurewebsites.net/
       </a>,
     ],
     english: [
@@ -90,8 +94,12 @@ const Text = {
       <br key="chessBr3" />,
       <br key="chessBr4" />,
       "Link to the game: ",
-      <a href="https://kettler-gamer.github.io/chess/" key={4}>
-        https://kettler-gamer.github.io/chess/
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://fechess.azurewebsites.net/"
+        key={4}>
+        https://fechess.azurewebsites.net/
       </a>,
     ],
   },
