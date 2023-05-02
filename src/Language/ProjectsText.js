@@ -64,12 +64,12 @@ const Text = {
           alt: "channels",
         },
         {
-          src: "chatApp/channels.webp",
-          alt: "channels",
+          src: "chatApp/login.webp",
+          alt: "login",
         },
         {
-          src: "chatApp/channels.webp",
-          alt: "channels",
+          src: "chatApp/createChannel.webp",
+          alt: "create channel",
         },
       ],
     },

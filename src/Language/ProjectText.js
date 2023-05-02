@@ -89,7 +89,9 @@ const Text = {
       <img
         key="chess2"
         className="project-image"
-        src={process.env.PUBLIC_URL + "/images/projects/chess/chess3.jpg"}
+        src={
+          process.env.PUBLIC_URL + "/images/projects/chatApp/createChannel.webp"
+        }
         alt="basement"
       />,
       <br key="chatBr1" />,
@@ -105,7 +107,9 @@ const Text = {
       <img
         key="chess2"
         className="project-image"
-        src={process.env.PUBLIC_URL + "/images/projects/chatApp/channels.webp"}
+        src={
+          process.env.PUBLIC_URL + "/images/projects/chatApp/createChannel.webp"
+        }
         alt="basement"
       />,
       <br key="chatBr1" />,
