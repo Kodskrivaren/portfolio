@@ -13,6 +13,12 @@ const infos = [
     img: "/images/projects/chess/chess2.jpg",
     desc: Text.chess,
   },
+  {
+    path: "chatapp",
+    title: "Chat app",
+    img: "/images/projects/chatApp/channels.webp",
+    desc: Text.chatapp,
+  },
 ];
 
 export default infos;

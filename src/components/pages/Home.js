@@ -34,6 +34,14 @@ function Home(props) {
       key={10}>
       {Text.chess[props.language]}
     </Link>,
+    <Link
+      to="/portfolio/projects/project/chatapp"
+      onClick={() => {
+        props.scrollToTop();
+      }}
+      key={12}>
+      Chat App
+    </Link>,
   ];
 
   return (

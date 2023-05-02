@@ -30,29 +30,9 @@ const Text = {
       desc: {
         svenska: [
           "Shack är ett av de första spelen jag programmerade när jag lärde mig javascript.",
-          <br key={0} />,
-          <br key={1} />,
-          "Länk till spelet: ",
-          <a
-            href="https://kettler-gamer.github.io/chess/"
-            rel="noreferrer"
-            target="_blank"
-            key={4}>
-            https://kettler-gamer.github.io/chess/
-          </a>,
         ],
         english: [
           "Chess is one of the first games I made when I learned JavaScript.",
-          <br key={0} />,
-          <br key={1} />,
-          "Link to the game: ",
-          <a
-            href="https://kettler-gamer.github.io/chess/"
-            rel="noreferrer"
-            target="_blank"
-            key={4}>
-            https://kettler-gamer.github.io/chess/
-          </a>,
         ],
       },
       linkTo: "chess",
@@ -68,6 +48,28 @@ const Text = {
         {
           src: "chess/chess3.jpg",
           alt: "online lobby",
+        },
+      ],
+    },
+
+    {
+      desc: {
+        svenska: ["Chat app med ringfunktion."],
+        english: ["Chat app with call functionality."],
+      },
+      linkTo: "chatapp",
+      slideShow: [
+        {
+          src: "chatApp/channels.webp",
+          alt: "channels",
+        },
+        {
+          src: "chatApp/channels.webp",
+          alt: "channels",
+        },
+        {
+          src: "chatApp/channels.webp",
+          alt: "channels",
         },
       ],
     },
