@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NavList from "./NavList";
 
 function HeaderNav(props) {
@@ -24,7 +24,7 @@ function HeaderNav(props) {
         <img
           className="burger-image"
           alt="burger menu"
-          src={process.env.PUBLIC_URL + "/images/Burger_Menu_TP.webp"}></img>
+          src={"/images/Burger_Menu_TP.webp"}></img>
       </button>
     </nav>
   );

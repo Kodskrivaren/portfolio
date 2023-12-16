@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Card from "../elements/Card";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import ProjectsInfo from "../../db/ProjectsInfo";

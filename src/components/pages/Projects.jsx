@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styling/stylesheet/main.css";
 import Card from "../elements/Card";
 import { Link } from "react-router-dom";
@@ -19,7 +18,7 @@ function Projects(props) {
                   className="slide"
                   key={`${element.linkTo}Slide${index + 1}`}
                   alt={slideElement.alt}
-                  src={`${process.env.PUBLIC_URL}/images/projects/${slideElement.src}`}
+                  src={`/images/projects/${slideElement.src}`}
                 />
               );
             })}
@@ -27,7 +26,7 @@ function Projects(props) {
             pText={element.desc[props.language]}
             readMore={
               <Link
-                to={`/portfolio/projects/project/${element.linkTo}`}
+                to={`/projects/project/${element.linkTo}`}
                 className="read-more-btn"
                 onClick={() => {
                   props.scrollToTop();

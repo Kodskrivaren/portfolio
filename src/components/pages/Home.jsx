@@ -19,7 +19,7 @@ function Home(props) {
 
   const projects = [
     <Link
-      to="/portfolio/projects/project/mistymind"
+      to="/projects/project/mistymind"
       onClick={() => {
         props.scrollToTop();
       }}
@@ -27,7 +27,7 @@ function Home(props) {
       Misty Mind
     </Link>,
     <Link
-      to="/portfolio/projects/project/chess"
+      to="/projects/project/chess"
       onClick={() => {
         props.scrollToTop();
       }}
@@ -35,7 +35,7 @@ function Home(props) {
       {Text.chess[props.language]}
     </Link>,
     <Link
-      to="/portfolio/projects/project/chatapp"
+      to="/projects/project/chatapp"
       onClick={() => {
         props.scrollToTop();
       }}

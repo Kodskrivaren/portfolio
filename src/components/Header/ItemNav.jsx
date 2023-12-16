@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 function ItemNav(props) {
+  const location = useLocation();
+
   function setPage() {
     props.setToggle !== undefined && props.setToggle(false);
   }
@@ -14,12 +16,7 @@ function ItemNav(props) {
         className="item-button"
         onClick={setPage}
         name={props.page}
-        style={
-          useLocation().pathname.endsWith(props.page) ||
-          window.location.pathname.endsWith(props.page.slice(0, -1))
-            ? { color: "#75e6da" }
-            : {}
-        }>
+        style={props.page === location.pathname ? { color: "#75e6da" } : {}}>
         {props.displayName}
       </Link>
     </li>

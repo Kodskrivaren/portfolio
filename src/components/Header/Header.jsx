@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styling/stylesheet/main.css";
 import HeaderNav from "./HeaderNav";
 import LanguageSelection from "./LanguageSelection";

@@ -36,7 +36,7 @@ function Card(props) {
       {props.titleImage !== undefined && (
         <img
           className={props.imageClass}
-          src={process.env.PUBLIC_URL + props.titleImage}
+          src={props.titleImage}
           alt={props.imageAlt}
         />
       )}

@@ -409,11 +409,11 @@ body {
 
 @font-face {
   font-family: customFont;
-  src: url("../../../public/fonts/Inter/Inter.ttf");
+  src: url("/fonts/Inter/Inter.ttf");
 }
 body {
   background-color: #1e1e1e;
-  background-image: url("../../../public/images/Portfolio_BG.webp");
+  background-image: url("/images/Portfolio_BG.webp");
   background-position: 0 9em;
   background-repeat: no-repeat;
   font-family: customFont, sans-serif;
@@ -428,4 +428,4 @@ body #root .App {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-}/*# sourceMappingURL=main.css.map */
+}

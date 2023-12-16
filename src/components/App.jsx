@@ -1,5 +1,5 @@
 import "./../styling/stylesheet/main.css";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer";
@@ -32,7 +32,7 @@ function App() {
       <BrowserRouter>
         <Header language={language} setLanguage={setLanguage} />
         <Routes>
-          <Route path="/portfolio/">
+          <Route path="/">
             <Route
               index
               element={<Home scrollToTop={scrollToTop} language={language} />}

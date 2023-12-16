@@ -12,9 +12,7 @@ const Text = {
       <img
         key="Misty1"
         className="project-image"
-        src={
-          process.env.PUBLIC_URL + "/images/projects/mistyMind/Level_2_b_3.webp"
-        }
+        src={"/images/projects/mistyMind/Level_2_b_3.webp"}
         alt="hallway"
       />,
       "Under spelets gång får man lösa pussel och försöka undvika monstret som patrullerar runt korridorerna. " +
@@ -22,9 +20,7 @@ const Text = {
       <img
         key="Misty2"
         className="project-image"
-        src={
-          process.env.PUBLIC_URL + "/images/projects/mistyMind/Level_1_c.webp"
-        }
+        src={"/images/projects/mistyMind/Level_1_c.webp"}
         alt="basement"
       />,
     ],
@@ -40,9 +36,7 @@ const Text = {
       <img
         key="Misty1"
         className="project-image"
-        src={
-          process.env.PUBLIC_URL + "/images/projects/mistyMind/Level_2_b_3.webp"
-        }
+        src={"/images/projects/mistyMind/Level_2_b_3.webp"}
         alt="hallway"
       />,
       "The player will solve puzzles and try to avoid the monster who is patrolling the corridors. " +
@@ -50,9 +44,7 @@ const Text = {
       <img
         key="Misty2"
         className="project-image"
-        src={
-          process.env.PUBLIC_URL + "/images/projects/mistyMind/Level_1_c.webp"
-        }
+        src={"/images/projects/mistyMind/Level_1_c.webp"}
         alt="basement"
       />,
     ],
@@ -63,7 +55,7 @@ const Text = {
       <img
         key="chess2"
         className="project-image"
-        src={process.env.PUBLIC_URL + "/images/projects/chess/chess3.jpg"}
+        src={"/images/projects/chess/chess3.jpg"}
         alt="basement"
       />,
       <br key="chessBr1" />,
@@ -75,7 +67,7 @@ const Text = {
       <img
         key="chess2"
         className="project-image"
-        src={process.env.PUBLIC_URL + "/images/projects/chess/chess3.jpg"}
+        src={"/images/projects/chess/chess3.jpg"}
         alt="basement"
       />,
       <br key="chessBr1" />,
@@ -89,9 +81,7 @@ const Text = {
       <img
         key="chess2"
         className="project-image"
-        src={
-          process.env.PUBLIC_URL + "/images/projects/chatApp/createChannel.webp"
-        }
+        src={"/images/projects/chatApp/createChannel.webp"}
         alt="basement"
       />,
       <br key="chatBr1" />,
@@ -107,9 +97,7 @@ const Text = {
       <img
         key="chess2"
         className="project-image"
-        src={
-          process.env.PUBLIC_URL + "/images/projects/chatApp/createChannel.webp"
-        }
+        src={"/images/projects/chatApp/createChannel.webp"}
         alt="basement"
       />,
       <br key="chatBr1" />,
