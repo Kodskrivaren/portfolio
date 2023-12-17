@@ -1,0 +1,128 @@
+.page-content {
+  .content-project {
+    box-shadow: 0 0 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 4em;
+    background-color: $CNavyBlueTP;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 750px;
+    border-radius: 1em;
+    padding: 4em 1.5em;
+    border: 3px solid $CBlueGreen;
+    .project-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .project-image {
+      display: block;
+      border-radius: 0.75em;
+    }
+
+    .project-p {
+      font-size: 1.2rem;
+      color: $CBlueGreen;
+      display: block;
+      margin-bottom: auto;
+      .project-image {
+        object-fit: cover;
+      }
+    }
+
+    .read-more-btn {
+      text-align: center;
+      transition: 0.2s background-color;
+      font-family: customFont, sans-serif;
+      background-color: $CNavyBlue;
+      cursor: pointer;
+      width: 300px;
+      color: $CBlueGreen;
+      border: 3px solid $CBlueGreen;
+      box-shadow: 0 0 20px black;
+      margin: 0 auto;
+      border-radius: 0.5em;
+      padding: 0.75em;
+      font-size: 1.2rem;
+    }
+    .read-more-btn:hover {
+      background-color: $CBlueGrotto;
+      color: $CNavyBlue;
+    }
+    .project-slideshow {
+      overflow: hidden;
+      width: 95%;
+      margin: 0 auto;
+      .images {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        scroll-behavior: smooth;
+        transform: translate3d(0, 0, 0);
+        .slide {
+          width: 100%;
+          flex: 0 0 100%;
+          object-fit: cover;
+          margin: auto 1%;
+          border-radius: 0.5em;
+        }
+      }
+    }
+    a {
+      color: $CBlueGrotto;
+    }
+    a:hover {
+      color: $CBlueGreen;
+    }
+  }
+
+  .content-card:last-child,
+  .content-project:last-child {
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-content {
+    .content-project,
+    .content-card {
+      .project-p,
+      .p-list,
+      .card-p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-content {
+    display: flex;
+    justify-content: center;
+
+    .content-project {
+      .project-slideshow {
+        .images {
+          .slide {
+            height: 15em;
+          }
+        }
+      }
+    }
+
+    .content-project:nth-child(even),
+    .content-card:nth-child(even),
+    .content-project:nth-child(odd),
+    .content-card:nth-child(odd) {
+      margin: 1em;
+    }
+
+    .full-project-page {
+      margin-top: 4em !important;
+      margin-bottom: 4em !important;
+    }
+  }
+}

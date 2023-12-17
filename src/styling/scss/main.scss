@@ -2,10 +2,14 @@
 @import "./components/_header.scss";
 @import "./components/_footer.scss";
 @import "./pages/_page.scss";
+@import "./pages/_home.scss";
+@import "./pages/_project.scss";
 
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.05ch;
+  line-height: 2.2ch;
 }
 
 *:focus {

@@ -12,9 +12,11 @@ function Home(props) {
     <p key={23}>HTML</p>,
     <p key={24}>React</p>,
     <p key={25}>Unity</p>,
-    <p key={27}>Node</p>,
-    <p key={28}>Git/Github</p>,
-    <p key={26}>Blender</p>,
+    <p key={26}>NodeJS</p>,
+    <p key={27}>MongoDB</p>,
+    <p key={28}>MySQL</p>,
+    <p key={29}>Git/Github</p>,
+    <p key={30}>Blender</p>,
   ];
 
   const projects = [

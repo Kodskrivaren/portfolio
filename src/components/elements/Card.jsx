@@ -13,7 +13,7 @@ function Card(props) {
   }
 
   return (
-    <div className={props.cardClassName}>
+    <div className={`${props.cardClassName} full-project-page`}>
       {props.cardTitleText !== undefined && (
         <h2 className={props.cardTitleClassName}>{props.cardTitleText}</h2>
       )}
@@ -40,9 +40,17 @@ function Card(props) {
           alt={props.imageAlt}
         />
       )}
-      {props.pText !== undefined && (
-        <p className={props.pClass}>{props.pText}</p>
-      )}
+      {props.pText !== undefined &&
+        props.pText.map((el) => {
+          if (typeof el === "string")
+            return (
+              <p className={props.pClass} key={el}>
+                {el}
+              </p>
+            );
+
+          return el;
+        })}
       {props.list !== undefined && props.list}
       {props.readMore !== undefined && props.readMore}
     </div>

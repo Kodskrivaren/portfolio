@@ -2,15 +2,9 @@ const Text = {
   mainText: {
     svenska: [
       "Min resa inom programmering började redan 2019 när jag tog min första onlinekurs i C#. Framåt julen samma år blev jag klar med kursen och började ta andra onlinekurser som riktade in sig på spelprogrammering.",
-      <br key={0} />,
-      <br key={1} />,
-      "",
     ],
     english: [
-      "My journey in programming started in 2019 when I took my first online course in C#. I finnished the course right before christmas the same year and started taking other online courses that focused on game development.",
-      <br key={0} />,
-      <br key={1} />,
-      "",
+      "My journey in programming started in 2019 when I took my first online course in C#. I finished the course right before christmas the same year and started taking other online courses that focused on game development.",
     ],
   },
   miscInfo: {
