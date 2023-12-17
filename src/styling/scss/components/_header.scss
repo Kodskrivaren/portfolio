@@ -12,13 +12,14 @@
   align-items: center;
 
   .header-title {
+    font-size: 1.5rem;
     .title-subtext {
       text-align: center;
       font-size: 0.75rem;
     }
   }
 
-  .language-select{
+  .language-select {
     background-color: $CNavyBlue;
     border: none;
     color: $CBlueGrotto;
@@ -26,15 +27,16 @@
     font-size: 1.2rem;
     padding: 0.25em;
     transition: 0.2s color;
-    option{
+    option {
       color: $CBlueGreen;
     }
   }
-  .language-select:hover{
+  .language-select:hover {
     color: $CBlueGreen;
   }
 
   .header-nav {
+    position: relative;
     display: flex;
     .nav-list {
       display: flex;
@@ -63,6 +65,14 @@
       display: none;
       width: 0;
       height: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    .header-title {
+      font-size: 2rem;
     }
   }
 }
@@ -107,13 +117,13 @@
       .burger-list {
         position: absolute;
         box-shadow: 0 0 20px black;
-        top: 5px;
-        left: -9em;
+        top: 15%;
+        right: 80%;
         visibility: visible;
         display: inline;
         list-style-type: none;
         background-color: $CNavyBlue;
-        width: 7em;
+        width: 11em;
         height: fit-content;
         padding: 0.5em 1em;
         z-index: 5;
