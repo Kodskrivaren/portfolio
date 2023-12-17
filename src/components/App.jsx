@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
         <Header language={language} setLanguage={setLanguage} />
         <Routes>
@@ -53,7 +53,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </div>
+    </>
   );
 }
 

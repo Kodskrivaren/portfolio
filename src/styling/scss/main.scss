@@ -35,12 +35,7 @@ body {
   min-height: 100vh;
   #root {
     min-height: 100vh;
-    .App {
-      min-height: 100vh;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: column;
   }
 }
