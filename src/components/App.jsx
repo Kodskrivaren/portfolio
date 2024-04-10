@@ -1,13 +1,13 @@
 import "./../styling/stylesheet/main.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Project from "./pages/Project";
-import AboutMe from "./pages/AboutMe";
-import NoPage from "./pages/NoPage";
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Project = lazy(() => import("./pages/Project"));
+const AboutMe = lazy(() => import("./pages/AboutMe"));
+const NoPage = lazy(() => import("./pages/NoPage"));
 
 function App() {
   const [language, setLanguage] = useState("english");
@@ -35,20 +35,44 @@ function App() {
           <Route path="/">
             <Route
               index
-              element={<Home scrollToTop={scrollToTop} language={language} />}
+              element={
+                <Suspense>
+                  <Home scrollToTop={scrollToTop} language={language} />
+                </Suspense>
+              }
             />
             <Route
               path="projects"
               element={
-                <Projects scrollToTop={scrollToTop} language={language} />
+                <Suspense>
+                  <Projects scrollToTop={scrollToTop} language={language} />
+                </Suspense>
               }
             />
             <Route
               path="projects/project/*"
-              element={<Project language={language} />}
+              element={
+                <Suspense>
+                  <Project language={language} />
+                </Suspense>
+              }
             />
-            <Route path="aboutme" element={<AboutMe language={language} />} />
-            <Route path="*" element={<NoPage language={language} />} />
+            <Route
+              path="aboutme"
+              element={
+                <Suspense>
+                  <AboutMe language={language} />
+                </Suspense>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <Suspense>
+                  <NoPage language={language} />
+                </Suspense>
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>
