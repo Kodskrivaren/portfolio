@@ -380,6 +380,9 @@
 }
 .page-content .content-project a {
   color: #189ab4;
+  font-family: customFont, sans-serif;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .page-content .content-project a:hover {
   color: #75e6da;
