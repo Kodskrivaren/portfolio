@@ -9,7 +9,7 @@ function Footer() {
             className="item-link"
             rel="noreferrer"
             target="_blank"
-            href="https://github.com/Kettler-gamer">
+            href="https://github.com/Kodskrivaren">
             Github
           </a>
         </li>
