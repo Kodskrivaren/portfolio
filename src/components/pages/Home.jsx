@@ -17,6 +17,7 @@ function Home(props) {
     <p key={28}>MySQL</p>,
     <p key={29}>Git/Github</p>,
     <p key={30}>Blender</p>,
+    <p key={31}>ASP .NET Core</p>,
   ];
 
   const projects = [
@@ -43,6 +44,14 @@ function Home(props) {
       }}
       key={12}>
       Chat App
+    </Link>,
+    <Link
+      to="/projects/project/mediabasen"
+      onClick={() => {
+        props.scrollToTop();
+      }}
+      key={13}>
+      Mediabasen
     </Link>,
   ];
 
