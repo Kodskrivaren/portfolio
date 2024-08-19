@@ -5,7 +5,7 @@ import Text from "../../Language/ProjectsText";
 
 function Projects(props) {
   return (
-    <main className="page-content">
+    <main className="page-content projects-content">
       {Text.projects.map((element, index) => {
         return (
           <Card
