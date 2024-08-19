@@ -19,6 +19,12 @@ const infos = [
     img: "/images/projects/chatApp/channels.webp",
     desc: Text.chatapp,
   },
+  {
+    path: "mediabasen",
+    title: "Mediabasen",
+    img: "/images/projects/mediabasen/landing_page.png",
+    desc: Text.mediabasen,
+  },
 ];
 
 export default infos;

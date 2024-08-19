@@ -73,6 +73,31 @@ const Text = {
         },
       ],
     },
+    {
+      desc: {
+        svenska: [
+          "Mediabasen är en web shop byggd med React i frontend och ASP .NET Core i backend.",
+        ],
+        english: [
+          "Mediabasen is a webshop built with React in frontend and ASP .NET Core in backend.",
+        ],
+      },
+      linkTo: "mediabasen",
+      slideShow: [
+        {
+          src: "mediabasen/landing_page.png",
+          alt: "landing page",
+        },
+        {
+          src: "mediabasen/detail_page.png",
+          alt: "detail page",
+        },
+        {
+          src: "mediabasen/search_page.png",
+          alt: "search page",
+        },
+      ],
+    },
   ],
   readMore: {
     svenska: "Läs mer",
