@@ -3,6 +3,31 @@ const Text = {
     {
       desc: {
         svenska: [
+          "Mediabasen är en web shop byggd med React i frontend och ASP .NET Core i backend.",
+        ],
+        english: [
+          "Mediabasen is a webshop built with React in frontend and ASP .NET Core in backend.",
+        ],
+      },
+      linkTo: "mediabasen",
+      slideShow: [
+        {
+          src: "mediabasen/landing_page.png",
+          alt: "landing page",
+        },
+        {
+          src: "mediabasen/detail_page.png",
+          alt: "detail page",
+        },
+        {
+          src: "mediabasen/search_page.png",
+          alt: "search page",
+        },
+      ],
+    },
+    {
+      desc: {
+        svenska: [
           "Misty Mind är ett skräckspel som jag utvecklar i spelmotorn Unity. Jag har jobbat på detta spel titt som tätt sedan April 2020.",
         ],
         english: [
@@ -70,31 +95,6 @@ const Text = {
         {
           src: "chatApp/createChannel.webp",
           alt: "create channel",
-        },
-      ],
-    },
-    {
-      desc: {
-        svenska: [
-          "Mediabasen är en web shop byggd med React i frontend och ASP .NET Core i backend.",
-        ],
-        english: [
-          "Mediabasen is a webshop built with React in frontend and ASP .NET Core in backend.",
-        ],
-      },
-      linkTo: "mediabasen",
-      slideShow: [
-        {
-          src: "mediabasen/landing_page.png",
-          alt: "landing page",
-        },
-        {
-          src: "mediabasen/detail_page.png",
-          alt: "detail page",
-        },
-        {
-          src: "mediabasen/search_page.png",
-          alt: "search page",
         },
       ],
     },

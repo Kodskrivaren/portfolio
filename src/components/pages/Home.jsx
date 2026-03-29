@@ -11,6 +11,7 @@ function Home(props) {
     <p key={22}>CSS</p>,
     <p key={23}>HTML</p>,
     <p key={24}>React</p>,
+    <p key={25}>Godot</p>,
     <p key={25}>Unity</p>,
     <p key={26}>NodeJS</p>,
     <p key={27}>MongoDB</p>,
@@ -22,11 +23,21 @@ function Home(props) {
 
   const projects = [
     <Link
+      to="/projects/project/mediabasen"
+      onClick={() => {
+        props.scrollToTop();
+      }}
+      key={13}
+    >
+      Mediabasen
+    </Link>,
+    <Link
       to="/projects/project/mistymind"
       onClick={() => {
         props.scrollToTop();
       }}
-      key={11}>
+      key={11}
+    >
       Misty Mind
     </Link>,
     <Link
@@ -34,7 +45,8 @@ function Home(props) {
       onClick={() => {
         props.scrollToTop();
       }}
-      key={10}>
+      key={10}
+    >
       {Text.chess[props.language]}
     </Link>,
     <Link
@@ -42,16 +54,9 @@ function Home(props) {
       onClick={() => {
         props.scrollToTop();
       }}
-      key={12}>
+      key={12}
+    >
       Chat App
-    </Link>,
-    <Link
-      to="/projects/project/mediabasen"
-      onClick={() => {
-        props.scrollToTop();
-      }}
-      key={13}>
-      Mediabasen
     </Link>,
   ];
 

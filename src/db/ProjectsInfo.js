@@ -2,6 +2,12 @@ import Text from "../Language/ProjectText";
 
 const infos = [
   {
+    path: "mediabasen",
+    title: "Mediabasen",
+    img: "/images/projects/mediabasen/landing_page.png",
+    desc: Text.mediabasen,
+  },
+  {
     path: "mistymind",
     title: "Misty Mind",
     img: "/images/projects/mistyMind/MistyMind_title_TP.png",
@@ -18,12 +24,6 @@ const infos = [
     title: "Chat app",
     img: "/images/projects/chatApp/channels.webp",
     desc: Text.chatapp,
-  },
-  {
-    path: "mediabasen",
-    title: "Mediabasen",
-    img: "/images/projects/mediabasen/landing_page.png",
-    desc: Text.mediabasen,
   },
 ];
 
