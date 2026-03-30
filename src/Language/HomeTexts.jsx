@@ -1,10 +1,10 @@
 const Text = {
   introduction: {
     svenska: [
-      `Hej! Jag utbildar mig till front-end utvecklare och förväntas vara klar våren 2024! Har kunskaper inom HTML, CSS och javascript men även inom ramverket React. Har tidigare programmerat mycket i C# på fritiden och har erfarenhet av Unity.`,
+      `Hej! Jag är en datanörd som spenderar majoriteten av min fritid på att programmera. Har gjort allt möjligt från webbsidor med React, NodeJS och MySQL till dataspel i Unity och Godot med C#. `,
     ],
     english: [
-      `Hi! I'm studying Front-end development and I'll finish my studies spring 2024! I'm mostly focused on HTML, CSS, JavaScript and React. I've also programmed alot in C# on my free time and have experience with Unity.`,
+      `Hi! I'm a computer nerd who spends the majority of my free time to program. I've done a bunch of projects from web sites with React, NodeJS and MySQL to computer games in Unity and Godot with C#`,
     ],
   },
   skills: {
