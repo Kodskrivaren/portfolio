@@ -23,6 +23,15 @@ function Home(props) {
 
   const projects = [
     <Link
+      to="/projects/project/venators"
+      onClick={() => {
+        props.scrollToTop();
+      }}
+      key={14}
+    >
+      Venators
+    </Link>,
+    <Link
       to="/projects/project/mediabasen"
       onClick={() => {
         props.scrollToTop();

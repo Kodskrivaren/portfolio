@@ -30,7 +30,8 @@ function Projects(props) {
                 className="read-more-btn"
                 onClick={() => {
                   props.scrollToTop();
-                }}>
+                }}
+              >
                 {Text.readMore[props.language]}
               </Link>
             }

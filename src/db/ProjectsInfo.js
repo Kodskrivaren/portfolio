@@ -2,6 +2,12 @@ import Text from "../Language/ProjectText";
 
 const infos = [
   {
+    path: "venators",
+    title: "Venators",
+    img: "/images/projects/venators/capsule_promo.webp",
+    desc: Text.venators,
+  },
+  {
     path: "mediabasen",
     title: "Mediabasen",
     img: "/images/projects/mediabasen/landing_page.png",

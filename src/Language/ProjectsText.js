@@ -3,6 +3,31 @@ const Text = {
     {
       desc: {
         svenska: [
+          "Venators är ett skjutspel gjort i Godot främst inspirerat av Half-Life.",
+        ],
+        english: [
+          "Venators is a first person shooter built with Godot mainly inspired by Half-Life.",
+        ],
+      },
+      linkTo: "venators",
+      slideShow: [
+        {
+          src: "venators/capsule_promo.webp",
+          alt: "capsule art",
+        },
+        {
+          src: "venators/image.webp",
+          alt: "shooting monstr",
+        },
+        {
+          src: "venators/image2.webp",
+          alt: "reloading",
+        },
+      ],
+    },
+    {
+      desc: {
+        svenska: [
           "Mediabasen är en web shop byggd med React i frontend och ASP .NET Core i backend.",
         ],
         english: [
